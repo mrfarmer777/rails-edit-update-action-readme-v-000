@@ -542,3 +542,14 @@ RuntimeError ({"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"KnYqMWDWs
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+
+
+Started PUT "/posts/3" for 76.245.251.194 at 2018-07-10 17:40:08 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnYqMWDWsk5QkZZ/msNxjnqgSlpWeAzeExtDLFT1sUBPIs2/Xg8DU4Npn0F/RYKPbdgUa+vIijDH/NOrttg07A==", "title"=>"asgd", "description"=>"asdgadfh", "commit"=>"Submit Post", "id"=>"3"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"KnYqMWDWsk5QkZZ/msNxjnqgSlpWeAzeExtDLFT1sUBPIs2/Xg8DU4Npn0F/RYKPbdgUa+vIijDH/NOrttg07A==", "title"=>"asgd", "description"=>"asdgadfh", "commit"=>"Submit Post", "controller"=>"posts", "action"=>"update", "id"=>"3"}):
+  app/controllers/posts_controller.rb:28:in `update'
+
+
