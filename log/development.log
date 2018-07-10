@@ -468,3 +468,29 @@ ActionController::RoutingError (No route matches [GET] "/new"):
 Started GET "/posts/new" for 76.245.251.194 at 2018-07-10 17:37:34 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 474ms (Views: 467.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 76.245.251.194 at 2018-07-10 17:37:35 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 76.245.251.194 at 2018-07-10 17:37:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 76.245.251.194 at 2018-07-10 17:37:35 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 76.245.251.194 at 2018-07-10 17:37:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 76.245.251.194 at 2018-07-10 17:37:35 +0000
+
+
+Started POST "/posts" for 76.245.251.194 at 2018-07-10 17:37:38 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xO1momjWMLA0z2xsxzpJ/S4nepCW6u8/TTZtsOwv6CehuYEsVg+Brec3ZVIivLr8OV8koStaadGZ0f03DgJtiw==", "title"=>"asgd", "description"=>"asdg", "commit"=>"Submit Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asgd"], ["description", "asdg"], ["created_at", "2018-07-10 17:37:38.168768"], ["updated_at", "2018-07-10 17:37:38.168768"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://67.205.188.72:43107/posts/3
+Completed 302 Found in 11ms (ActiveRecord: 3.8ms)
