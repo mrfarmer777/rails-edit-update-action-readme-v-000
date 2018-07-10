@@ -595,3 +595,11 @@ Processing by PostsController#update as HTML
   [1m[35m (13.0ms)[0m  commit transaction
 Redirected to http://67.205.188.72:43107/posts/3
 Completed 302 Found in 18ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/posts/3" for 76.245.251.194 at 2018-07-10 17:41:03 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms)
